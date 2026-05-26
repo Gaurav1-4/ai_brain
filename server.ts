@@ -2061,7 +2061,7 @@ app.delete("/api/queue/:id", async (req, res) => {
     await saveDatabase(dbState);
     res.json({ success: true, message: "Deleted queued item." });
   } else {
-    res.status(404).json({ error: "Queued item not found." });
+    res.status(404).json({ error: `Queued item not found: ${id}` });
   }
 });
 
@@ -2078,7 +2078,7 @@ app.post("/api/queue/:id/priority", async (req, res) => {
     await saveDatabase(dbState);
     res.json({ success: true, item });
   } else {
-    res.status(404).json({ error: "Queued item not found." });
+    res.status(404).json({ error: `Queued item not found: ${id}` });
   }
 });
 
