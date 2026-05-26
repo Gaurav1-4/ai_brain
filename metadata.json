@@ -1,0 +1,6 @@
+{
+  "name": "AI Brain",
+  "description": "Transform scattered social media reels and links into a structured search-oriented personal knowledge base.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
